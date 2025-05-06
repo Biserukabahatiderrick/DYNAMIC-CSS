@@ -49,16 +49,42 @@
     border-top: 1px solid #c4b0b0;
 }
 
-
-.tsapp{
-    background-color: black;
-    margin-left: 80px;
-    height: 100vh;
-    align-items: center;
+.tsapp {
+    display: flex;
     justify-content: space-between;
+    align-items: flex-start; 
+    padding: 10px 20px;
+    background-color: #060606;
+    height: 100vh; 
+    padding-left: 98px;
 }
-h1{
-    color: white;
+
+.tsapp h1 {
+    font-size: 24px;
+    margin: 0; 
+    color: #f5f1f1;
     margin-left: 15px;
     padding-top: 12px;
 }
+
+.tsappicons {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.tsappicons img {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    width: 100%;
+    
+}
+
+   
