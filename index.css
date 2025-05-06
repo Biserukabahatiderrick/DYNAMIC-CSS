@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.headcontainer{
+    
+}
+.icons{
+    display: block;
+    width: 40px;
+    height: 100vh;
+    line-height: 50px;
+    position: fixed;
+    padding: 10px 20px;
+    background-color:rgb(45, 40, 40);
+    
+}
+.toolkit {
+    position: relative;
+    display: block; 
+    margin-bottom: 20px;
+}
+
+.toolkit img {
+    display: block; 
+}
+
+.toolword {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 110%; 
+    transform: translateY(-50%);
+    color: black;
+    background-color:white;
+    text-align: center;
+    width: 90px;
+    border-radius: 30px;
+}
+
+.toolkit:hover .toolword {
+    visibility: visible;
+    opacity: 1;
+}
+.set{
+    margin-top: 280px;
+    padding-top: 12px;
+    border-top: 1px solid #c4b0b0;
+}
+
+
+.tsapp{
+    background-color: black;
+    margin-left: 80px;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    color: white;
+    margin-left: 15px;
+    padding-top: 12px;
+}
