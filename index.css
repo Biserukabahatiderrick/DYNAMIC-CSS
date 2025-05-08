@@ -29,19 +29,24 @@
 .toolword {
     visibility: hidden;
     position: absolute;
-    top: 50%;
-    left: 110%; 
+    top: 45%;
+    left: 100%; 
     transform: translateY(-50%);
     color: black;
     background-color:white;
     text-align: center;
-    width: 90px;
+    min-width: 90px;
     border-radius: 30px;
 }
 
 .toolkit:hover .toolword {
     visibility: visible;
     opacity: 1;
+    
+}
+.toolkit:hover img {
+    opacity: 0.5;
+    cursor: pointer;
 }
 .set{
     margin-top: 280px;
@@ -51,40 +56,99 @@
 
 .tsapp {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start; 
     padding: 10px 20px;
     background-color: #060606;
     height: 100vh; 
     padding-left: 98px;
+    gap: 10px; 
 }
-
+.tsapp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
 .tsapp h1 {
     font-size: 24px;
     margin: 0; 
     color: #f5f1f1;
     margin-left: 15px;
     padding-top: 12px;
+
 }
 
 .tsappicons {
     display: flex;
-    align-items: center;
-    padding-top: 12px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: end;
 }
 
 .tsappicons img {
     margin-left: 10px;
-    width: 24px;
-    height: 24px;
+    cursor: pointer;
+    padding-top: 13px;
+    display: inline-block;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.searchbar {
+    display: flex;
+    align-items: center;
+    background-color: #060606;
+    border-radius: 30px;
+    padding: 14px 20px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+.search{
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 5px;
+}
+.searchicon{
+    position: absolute;
+    padding-left: 6px;
+    padding-right: 8px
+}
+input::placeholder{
+    padding-left: 6px;
+}
+input[type="text"] {
+    padding-left: 34px;  
+}
+input:active, input:focus {
+    border: 2px solid green;
+}
+.btn{
+    padding-left: 18px;
+    margin: 0;
+    gap: 10px;
+}
+.newchat,.newread,.newfavs,.newgrp{
+    padding: 8px 12px;
+    border-radius: 30px;
+    background-color: #151515;
+    color: bisque;
+    border: 1px solid black;
+}
+.newchat:hover,.newread:hover,.newfavs:hover,.newgrp:hover{
+    background-color: #2a2a2a;
     cursor: pointer;
 }
-.input{
-    display: flex;
-    flex-direction: column;
-    padding-top: 45px;
-    width: 100%;
-    
+.newchat:focus,.newread:focus,.newfavs:focus,.newgrp:focus{
+    outline: none;
+    background-color: darkolivegreen;
 }
+
 
    
