@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 .headcontainer{
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-color: black;
 }
@@ -17,7 +18,7 @@
     position: fixed;
     padding: 10px 20px;
     background-color:rgb(45, 40, 40);
-    position: fixed;
+    padding-right: 50px;
     
 }
 .toolkit {
@@ -72,9 +73,17 @@
     align-items: flex-start; 
     padding: 10px 20px;
     background-color: #060606;
-    height: 100vh; 
-    padding-left: 98px;
+    padding-left: 82px;
     gap: 10px; 
+    width: 45%;
+    height: 100vh;
+    border: 1px solid rgb(138, 134, 134);
+}
+.profiletext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
 }
 .tsapp-header {
     display: flex;
@@ -209,6 +218,58 @@ p{
 .ticks{
     background-color: green;
 }
+h6{
+    color: white;
+}
+.textarea{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    background-color: #060606;
+}
+.chattingtext {
+    display: flex;
+    gap: 10px;
+    background-color: #1a1a1a;
+    padding: 12px 20px;
+    color: white;
+    width: 100%;
+}
+
+.chattingtextdoc img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.chattingtextdoc {
+    display: flex;
+    gap: 10px;
+    background-color: #1a1a1a;
+    padding: 12px 20px;
+    color: white;
+    width: 100%;
+}
+.chattingtextdata h2,
+.chattingtextdata p {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
