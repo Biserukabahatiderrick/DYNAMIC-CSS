@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 .headcontainer{
-    height: 100vh;
-    width: 100%;
     background-color: black;
+    display: flex;
+    flex-direction: row;
 }
 
 .icons{
@@ -35,8 +35,8 @@
     visibility: hidden;
     position: absolute;
     top: 45%;
-    left: 100%; 
-    transform: translateY(-50%);
+    left: 25px; 
+    transform: translateY(-40%);
     color: black;
     background-color:white;
     text-align: center;
@@ -77,13 +77,13 @@
     gap: 10px; 
     width: 45%;
     height: 100vh;
-    border: 1px solid rgb(138, 134, 134);
+    border: 5px solid black
 }
 .profiletext{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow-y: auto;
+    overflow: hidden; 
 }
 .tsapp-header {
     display: flex;
@@ -175,7 +175,7 @@ input:active, input:focus {
 h2{
     color: white;
     margin: 5px;
-    font-family: sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
 }
 p{
@@ -222,9 +222,8 @@ h6{
     color: white;
 }
 .textarea{
-    width: 100%;
+    width: 60%;
     height: 100vh;
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -232,32 +231,35 @@ h6{
     background-color: #060606;
 }
 .chattingtext {
-    display: flex;
-    gap: 10px;
     background-color: #1a1a1a;
-    padding: 12px 20px;
     color: white;
-    width: 100%;
 }
 
 .chattingtextdoc img {
     width: 40px;
+    display: flex;
     height: 40px;
     border-radius: 50%;
 }
 .chattingtextdoc {
     display: flex;
-    gap: 10px;
+    flex-direction: row;
     background-color: #1a1a1a;
-    padding: 12px 20px;
     color: white;
     width: 100%;
 }
-.chattingtextdata h2,
-.chattingtextdata p {
-    margin: 0;
+.chattingtextdata h2{
     font-family: sans-serif;
     color: white;
+    display: flex;
+    flex-direction: row;
+}
+.parag{
+    display: flex;
+    flex-direction: row;
+}
+.time{
+    padding-left: 40px;
 }
 
 
